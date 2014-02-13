@@ -1034,3 +1034,8 @@ h3 {
 h2 a[href] {
     color: #222;
 }
+
+.brand-title a[href] {
+    color: #FFF;
+    text-decoration: none;
+}
