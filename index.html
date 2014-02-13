@@ -1,0 +1,34 @@
+---
+layout: default
+title: Keith Loy&#x27;s Blog
+---
+
+<div class="posts-wrapper">
+  <!-- A wrapper for all the blog posts -->
+  <div class="posts">
+    <h1 class="content-subhead">All Posts</h1>
+
+    {% for post in site.posts %}
+    <section class="post">
+      <header class="post-header">
+        <img class="post-avatar" alt="Keith Loy&#x27;s avatar" height="48" 
+          width="48" 
+          src="http://www.gravatar.com/avatar/f72d73da5b57f96d22593dca8bac5e13.png"
+        />
+
+        <h2 class="post-title">
+        	<a href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+
+        <p class="post-meta">
+          By <a href="{{ site.linked_in }}" class="post-author">
+          Keith Loy</a> on {{ post.date | date_to_string }}
+        </p>
+      </header>
+      <div class="post-description">
+        {{  post.excerpt }}
+      </div><!-- /.post-description -->
+    </section><!-- /.post -->
+    {% endfor %}
+  </div><!-- /.posts -->
+</div><!-- /.posts-wrapper -->
