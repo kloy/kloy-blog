@@ -1035,7 +1035,37 @@ h2 a[href] {
     color: #222;
 }
 
-.brand-title a[href] {
+.brand-title a {
     color: #FFF;
+    text-decoration: none;
+    transition: color 0.75s;
+}
+
+.brand-title a:hover {
+    color: rgb(172, 202, 219);
+}
+
+#social-menu {
+    background: none;
+    margin-top: 16px;
+}
+
+#social-menu  li {
+    margin-left: 6px;
+}
+
+#social-menu i {
+    font-size: 170%;
+}
+
+#social-menu a {
+    color: #FFF;
+    padding: 0;
+    transition: color 0.75s;
+}
+
+#social-menu a:hover {
+    color: rgb(172, 202, 219);
+    background: none;
     text-decoration: none;
 }

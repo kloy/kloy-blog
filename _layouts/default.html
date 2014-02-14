@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>{{ site.name }} :: {{ page.title }}</title>
 
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="/css/syntax.css">
 
     <!-- Custom CSS -->
-    <!-- <link rel="stylesheet" href="/css/main.css"> -->
-    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="/css/blog.css">
   </head>
   <body>
@@ -25,6 +24,28 @@
             </h1>
             <h2 class="brand-tagline">Simplifying the web</h2>
           </hgroup>
+          <div  
+            id="social-menu"
+            class="pure-menu pure-menu-open pure-menu-horizontal"
+          >
+            <ul>
+              <li>
+                <a href="{{ site.github }}">
+                  <i class="icon-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{ site.twitter }}">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{ site.linked_in }}">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.pure-menu -->
         </div><!-- /.header -->
       </div><!-- /.sidebar -->
 

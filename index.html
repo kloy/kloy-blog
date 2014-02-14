@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Keith Loy&#x27;s Blog
+title: "Home"
 ---
 
 <div class="posts-wrapper">
@@ -28,6 +28,13 @@ title: Keith Loy&#x27;s Blog
       <div class="post-description">
         {{  post.excerpt }}
       </div><!-- /.post-description -->
+      <div>
+        <a class="pure-button pure-button-primary" 
+          href="{{ post.url }}"
+        >
+          Read More
+        </a>
+      </div>
     </section><!-- /.post -->
     {% endfor %}
   </div><!-- /.posts -->

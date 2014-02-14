@@ -1,9 +1,33 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<div class="posts-wrapper">
+  <!-- A wrapper for all the blog posts -->
+  <div class="posts">
+    <section class="post">
+      <header class="post-header">
+        <img class="post-avatar" alt="Keith Loy&#x27;s avatar" height="48" 
+          width="48" 
+          src="http://www.gravatar.com/avatar/f72d73da5b57f96d22593dca8bac5e13.png"
+        />
 
-<div class="post">
-{{ content }}
-</div>
+        <h2 class="post-title">{{ page.title }}</h2>
+
+        <p class="post-meta">
+          By <a href="{{ site.linked_in }}" class="post-author">
+          Keith Loy</a> on {{ page.date | date_to_string }}
+        </p>
+      </header>
+      <div class="post-description">
+        {{  content }}
+      </div><!-- /.post-description -->
+      <div>
+        <a class="pure-button pure-button-primary" 
+          href="/"
+        >
+          Back
+        </a>
+      </div>
+    </section><!-- /.post -->
+  </div><!-- /.posts -->
+</div><!-- /.posts-wrapper -->
