@@ -5,3 +5,4 @@ excerpt_separator: "\n\n\n"
 linked_in: http://www.linkedin.com/pub/keith-loy/21/676/70
 github: https://github.com/kloy
 twitter: https://twitter.com/guynamedkeith
+permalink: /blog/:year/:month/:day/:title
